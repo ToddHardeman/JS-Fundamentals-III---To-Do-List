@@ -10,7 +10,7 @@ This is a super duper simple web application designed to help users manage their
 - Clear the input field after adding a task.
 - Prevent page refresh when adding tasks.
 
-## Features under Development
+## Features Under Development
 
 - Users should be able to mark a task as completed by crossing it out on click
 - Users should be able to remove to-do tasks by removing those elements from the DOM
