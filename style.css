@@ -49,9 +49,9 @@ body {
   
   .tasks {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     background-color: #92b195;
-    padding: 20px;
+    padding: 0px;
     border-radius: 30px;
   }
   
@@ -82,4 +82,25 @@ body {
   
   #addButton:hover {
     background-color: #729E7A;
+  }
+
+  #TaskList.ul {
+    font-size: xx-large;
+    justify-content: flex-start;
+    padding: 0 0 0 0;
+  }
+
+  .task-item {
+    margin-left: 0px;  
+    display: flex;
+    align-items: flex-start; 
+    justify-content: flex-start;
+}
+
+.task-item input[type="checkbox"] {
+    margin-right: 10px; 
+}
+
+  ul {
+    padding-inline-start: 0px;
   }
