@@ -10,37 +10,39 @@
     <style>
         body {
           background-color: #000000;
-          color: #FFFFFF;
         }
       </style>
     <header>
-        <div class="logo">
-            <h1>TODO List</h1>
-        </div>
+        <img src="https://i.ibb.co/3mdCPLxZ/TITLE.png" alt="TITLE" border="0" />
     </header>
-    <div class="nameDate">
-        <label class="label" id="LName">NAME:</label>
-        <input type="text" placeholder="First & Last Name">
-        <label class="label" id="LDate">DATE:</label>
-        <input type="date" placeholder="YY/MM/DD">
-        <div class="tasks">
-
+    <div class="grid-wrapper">
+        <div class='nameDate flex-container'>
+            <div class="">
+                <label class="label" id="LName">NAME:</label>
+                <input type="text" placeholder="First & Last Name">
+                <label class="label" id="LDate">DATE:</label>
+                <input type="date" placeholder="YY/MM/DD">
+            </div>
         </div>
-    </div>
-    <div class="topPriorities">
-        <label>Top Priorities</label>
-        <ul>
-            <ol>1. Eat</ol>
-            <ol>2. Sleep</ol>
-            <ol>3. Work</ol>
-        </ul>
-    </div>
-    <div class="tasks">
-        <Label>Enter your task:</Label>
-        <input type="text" id="task">
-        <button id="addButton">ADD</button>
-        <ul id="TaskList"> 
-        </ul>
+         <div class='topPriorities flex-container'>
+            <div class="">
+                <label>Top Priorities</label>
+                <ul>
+                    <ol>1. Eat</ol>
+                    <ol>2. Sleep</ol>
+                    <ol>3. Work</ol>
+                </ul>
+            </div>
+         </div>
+        <div class='tasks felx-container'>
+            <div class="">
+                <Label>Enter your task:</Label>
+                <input type="text" id="task">
+                <button id="addButton">ADD</button>
+                <ul id="TaskList"> 
+            </ul>
+            </div>
+         </div>
     </div>
 </body>
 <script src="/index.js"></script>
