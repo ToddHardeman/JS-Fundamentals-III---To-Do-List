@@ -6,12 +6,14 @@ addButton.addEventListener('click', function(event) {
     event.preventDefault(); 
     
     if (newTask.value !== "") { 
-        let task = document.createElement('li'); 
-        task.appendChild(document.createTextNode(newTask.value)); 
+        let task = document.createElement('label');
+        let taskCheckbox = document.createElement('input'); 
+        taskCheckbox.type = 'checkbox';
+        task.appendChild(document.createTextNode(newTask.value));
 
+        TaskList.appendChild(taskCheckbox);
         TaskList.appendChild(task); 
+
         newTask.value = ''; 
-    }})
-
-
+}})
 
