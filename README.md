@@ -31,7 +31,7 @@ This is a super duper simple web application designed to help users manage their
 ## Known Issues
 
 - Tasks cannot be deleted once added (feature under development).
-- Compatibility issues with certain browsers (please use the latest version of Chrome or Firefox).
+- Tasks cannot be deleted 
 
 ## Authors
 
