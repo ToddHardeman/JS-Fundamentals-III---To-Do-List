@@ -1,10 +1,13 @@
-let newTask = document.getElementById('newTask'); //gets the text input from user in div class container
-let TaskList = Document.getElementById('TaskList'); //assigns the HTML task list 
+const newTask = document.getElementById('task'); 
+const TaskList = document.getElementById('TaskList');
+const addButton = document.getElementById('addButton')
 
-// need to somehow add a task
-function addTask () {
-    let task = document.createElement('li')
-    task.appendChild(document.createTextNode(newTask.value));
-    TaskList.appendChild(li);
-    newTask.value
-}
+addButton.addEventListener('click', function(event) {
+    event.preventDefault(); 
+    
+    if (newTask.value.trim() !== "") { 
+        let task = document.createElement('li'); 
+        task.appendChild(document.createTextNode(newTask.value)); 
+        TaskList.appendChild(task); 
+        newTask.value = ''; 
+    }})
