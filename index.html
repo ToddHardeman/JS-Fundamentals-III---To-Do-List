@@ -5,22 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TODO List</title>
     <link rel="stylesheet" href="./style.css">
-    <script src="/index.js"></script>
 </head>
 <body>
-    <h1>TODO List</h1>
-    <main>
-        <label>NAME:</label>
+    <header>
+        <div class="logo">
+            <h1>TODO List</h1>
+        </div>
+    </header>
+    <div class="container">
+        <label class="label" id="LName">NAME:</label>
         <input type="text" placeholder="First & Last Name">
-        <label>DATE:</label>
-        <input type="text" placeholder="YY/MM/DD">
-        <form>
-            <div class="tasks">
-                <Label>Enter your task:</Label>
-                <input type="text">
-            </div>
-            <label>TASK LIST</label>
-        </form>
-    </main>
+        <label class="label" id="LDate">DATE:</label>
+        <input type="date" placeholder="YY/MM/DD">
+        <div class="tasks">
+            <Label>Enter your task:</Label>
+            <input type="text" id="task">
+            <button id="addButton">ADD</button>
+            <ul id="TaskList"> 
+                
+            </ul>
+        </div>
+    </div>
 </body>
+<script src="/index.js"></script>
 </html>
