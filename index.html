@@ -7,24 +7,40 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+    <style>
+        body {
+          background-color: #000000;
+          color: #FFFFFF;
+        }
+      </style>
     <header>
         <div class="logo">
             <h1>TODO List</h1>
         </div>
     </header>
-    <div class="container">
+    <div class="nameDate">
         <label class="label" id="LName">NAME:</label>
         <input type="text" placeholder="First & Last Name">
         <label class="label" id="LDate">DATE:</label>
         <input type="date" placeholder="YY/MM/DD">
         <div class="tasks">
-            <Label>Enter your task:</Label>
-            <input type="text" id="task">
-            <button id="addButton">ADD</button>
-            <ul id="TaskList"> 
-                
-            </ul>
+
         </div>
+    </div>
+    <div class="TopPriorities">
+        <label>Top Priorities</label>
+        <ul>
+            <ol>1. Eat</ol>
+            <ol>2. Sleep</ol>
+            <ol>3. Work</ol>
+        </ul>
+    </div>
+    <div class="tasks">
+        <Label>Enter your task:</Label>
+        <input type="text" id="task">
+        <button id="addButton">ADD</button>
+        <ul id="TaskList"> 
+        </ul>
     </div>
 </body>
 <script src="/index.js"></script>
