@@ -1,0 +1,85 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    height: 100vh; 
+    margin: 0; 
+    background-color: #000000;
+    font-family: 'Century';
+    color: #272c28;
+  }
+  
+  
+  .nameDate {
+    grid-area: fruit;
+    }
+    
+    .tasks {
+    grid-area: veggie;
+    }
+    
+    .topPriorites {
+    grid-area: beverage;
+    }
+    
+    
+  .grid-wrapper {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(4, 1fr);
+      column-gap: 5px;
+      row-gap: 5px;
+      margin-top: 50px;
+      grid-template-areas:
+        "fruit veggie"
+        "fruit veggie"
+        "beverage veggie"
+        "beverage veggie"
+        
+  }
+  
+  
+  .nameDate {
+    display: flex;
+    justify-content: center;
+    background-color: #C2D8AD;
+    padding: 50px;
+    border-radius: 30px;
+  }
+  
+  .tasks {
+    display: flex;
+    justify-content: center;
+    background-color: #92b195;
+    padding: 20px;
+    border-radius: 30px;
+  }
+  
+  .topPriorities {
+    display: flex;
+    justify-content: center;
+    background-color: #729E7E;
+    padding: 20px;
+    border-radius: 30px;
+  }
+
+  #addButton {
+    background-color: #272c28;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: 'Century';
+    font-size: 18px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 11px;
+    transition: background-color 0.3s ease; 
+  }
+  
+  
+  #addButton:hover {
+    background-color: #729E7A;
+  }
